@@ -1,8 +1,7 @@
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.0"
+    compileSdkVersion 33
 
     defaultConfig {
         minSdkVersion 15
@@ -10,7 +9,7 @@ android {
     }
 
     dependencies {
-        compile project(':min3d')
+       api project(":min3d")
     }
 
 
